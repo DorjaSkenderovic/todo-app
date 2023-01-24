@@ -1,0 +1,116 @@
+$primary-color: #1a1e24;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+
+html {
+    background: rgb(22, 71, 71);
+    background: linear-gradient(0deg, rgba(22, 71, 71, 1) 0%, rgba(127, 73, 93, 1) 71%, rgba(217, 74, 111, 1) 100%);
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    position: fixed;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 60%;
+
+    .header {
+        position: fixed;
+        width: 100%;
+        top: 16px;
+
+        .title {
+            margin: 0;
+            font-size: 42px;
+            font-weight: bolder;
+            margin-left: 15px;
+            background: linear-gradient(90deg, rgba(22,71,71,1) 0%, rgba(127,73,93,1) 43%, rgba(217,74,111,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .todoInput {
+            margin-top: 15px;
+            display: flex;
+            margin-left: 15px;
+
+            justify-content: space-between;
+            align-items: center;
+
+            input {
+                width: 80%;
+                height: 24px;
+                font-family: 'Roboto Condensed', sans-serif;
+                font-size: 14px;
+                border-radius: 6px;
+                padding: 5px 10px;
+                outline: none;
+                border: 3px solid $primary-color;
+
+                &:hover {
+                    border-color: #29474b;
+                }
+
+                &:focus {
+                    border-color: #29474b;
+                }
+
+            }
+
+            button {
+                background: transparent;
+                border-color: transparent;
+
+                .addIcon {
+
+                    &:hover,
+                    .todoLine {
+                        cursor: pointer;
+
+                        * {
+                            stroke: #225757;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ol::-webkit-scrollbar {
+        display: none;
+    }
+
+    ol {
+        margin-top: 125px;
+        overflow: scroll;
+        overflow-x: hidden;
+        height: 64%;
+
+        .todoLine {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 4px 0;
+            font-size: 24px;
+
+            button {
+                background: transparent;
+                border-color: transparent;
+
+                &:hover {
+                    cursor: pointer;
+
+                    * {
+                        stroke: #d2496d;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
