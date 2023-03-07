@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 16px;
+
+    .title {
+        margin: 0;
+        font-size: 42px;
+        font-weight: bolder;
+        margin-left: 15px;
+        background: linear-gradient(90deg, rgba(22, 71, 71, 1) 0%, rgba(127, 73, 93, 1) 43%, rgba(217, 74, 111, 1) 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

@@ -1,0 +1,16 @@
+.button {
+    background: transparent;
+    border-color: transparent;
+
+    .addIcon {
+
+        &:hover,
+        .todoLine {
+            cursor: pointer;
+
+            * {
+                stroke: #225757;
+            }
+        }
+    }
+}

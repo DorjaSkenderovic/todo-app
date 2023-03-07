@@ -1,0 +1,32 @@
+ol::-webkit-scrollbar {
+    display: none;
+}
+
+.ol {
+    margin-top: 125px;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 64%;
+
+    .todoLine {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4px 0;
+        font-size: 24px;
+
+        button {
+            background: transparent;
+            border-color: transparent;
+
+            &:hover {
+                cursor: pointer;
+
+                * {
+                    stroke: #d2496d;
+                }
+            }
+        }
+    }
+
+}
